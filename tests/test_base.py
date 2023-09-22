@@ -1,7 +1,7 @@
 import unittest
 from app import app
 
-class BaseCase(unittest.TestCase):
+class TestBase(unittest.TestCase):
     def setUp(self):
         # this statement will be executed before testing
         self.app = app.test_client()

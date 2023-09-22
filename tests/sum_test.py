@@ -1,12 +1,12 @@
 import unittest
 from app.routes import sum
-from tests.BaseCase import BaseCase
+from tests.test_base import TestBase
 
 #class TestSum(unittest.TestCase):
 # If we want to run code before/after any test by default
-# Create a base class BaseCase containing these functions
-# Derive other testing classes from BaseCase
-class TestSum(BaseCase):
+# Create a base class TestBase containing these functions
+# Derive other testing classes from TestBase
+class TestSum(TestBase):
     def test_list_int(self):
         data = [1, 2, 3, 4, 5]
         result = sum(data)
